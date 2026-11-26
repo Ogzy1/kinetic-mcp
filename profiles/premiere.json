@@ -1,0 +1,52 @@
+{
+  "app_id": "premiere",
+  "window_title_contains": ["Adobe Premiere Pro"],
+  "process_names": ["Adobe Premiere Pro.exe"],
+  "notes": "Normalized starter layout for Adobe Premiere Pro default Editing workspace.",
+  "regions": {
+    "source_monitor": {
+      "name": "source_monitor",
+      "role": "preview",
+      "left_ratio": 0.02,
+      "top_ratio": 0.07,
+      "right_ratio": 0.45,
+      "bottom_ratio": 0.53,
+      "description": "Source clip monitor"
+    },
+    "preview_box": {
+      "name": "preview_box",
+      "role": "preview",
+      "left_ratio": 0.46,
+      "top_ratio": 0.07,
+      "right_ratio": 0.90,
+      "bottom_ratio": 0.53,
+      "description": "Program Monitor live sequence preview"
+    },
+    "project_panel": {
+      "name": "project_panel",
+      "role": "panel",
+      "left_ratio": 0.02,
+      "top_ratio": 0.55,
+      "right_ratio": 0.30,
+      "bottom_ratio": 0.96,
+      "description": "Project media bins and effects"
+    },
+    "timeline_track": {
+      "name": "timeline_track",
+      "role": "timeline",
+      "left_ratio": 0.32,
+      "top_ratio": 0.55,
+      "right_ratio": 0.96,
+      "bottom_ratio": 0.96,
+      "description": "Sequence timeline tracks and playhead scrubber"
+    }
+  },
+  "shortcuts": {
+    "play_pause": ["space"],
+    "split_clip": ["ctrl", "k"],
+    "undo": ["ctrl", "z"],
+    "delete_clip": ["delete"],
+    "razor_tool": ["c"],
+    "selection_tool": ["v"]
+  }
+}

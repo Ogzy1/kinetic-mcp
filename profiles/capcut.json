@@ -1,0 +1,61 @@
+{
+  "app_id": "capcut",
+  "window_title_contains": ["CapCut"],
+  "process_names": ["CapCut.exe"],
+  "notes": "Normalized starter layout for CapCut Desktop (16:9 workspace). Re-calibrate any region via screen_label_region if your panel proportions differ.",
+  "regions": {
+    "media_panel": {
+      "name": "media_panel",
+      "role": "panel",
+      "left_ratio": 0.01,
+      "top_ratio": 0.06,
+      "right_ratio": 0.31,
+      "bottom_ratio": 0.56,
+      "description": "Media library, effects, and transitions panel"
+    },
+    "preview_box": {
+      "name": "preview_box",
+      "role": "preview",
+      "left_ratio": 0.32,
+      "top_ratio": 0.08,
+      "right_ratio": 0.72,
+      "bottom_ratio": 0.54,
+      "description": "Live video player preview canvas"
+    },
+    "inspector_panel": {
+      "name": "inspector_panel",
+      "role": "panel",
+      "left_ratio": 0.73,
+      "top_ratio": 0.06,
+      "right_ratio": 0.99,
+      "bottom_ratio": 0.56,
+      "description": "Transform, speed, animation, and color inspector"
+    },
+    "timeline_toolbar": {
+      "name": "timeline_toolbar",
+      "role": "toolbar",
+      "left_ratio": 0.01,
+      "top_ratio": 0.57,
+      "right_ratio": 0.99,
+      "bottom_ratio": 0.62,
+      "description": "Split, undo, delete, and magnet toggle toolbar"
+    },
+    "timeline_track": {
+      "name": "timeline_track",
+      "role": "timeline",
+      "left_ratio": 0.05,
+      "top_ratio": 0.63,
+      "right_ratio": 0.98,
+      "bottom_ratio": 0.96,
+      "description": "Main multi-track video/audio timeline scrubbing region"
+    }
+  },
+  "shortcuts": {
+    "play_pause": ["space"],
+    "split_clip": ["ctrl", "b"],
+    "undo": ["ctrl", "z"],
+    "delete_clip": ["delete"],
+    "zoom_in_timeline": ["ctrl", "="],
+    "zoom_out_timeline": ["ctrl", "-"]
+  }
+}

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kinetic-mcp"
+version = "0.1.0"
+description = "Screenshot-free Windows spatial UI, continuous motor control, and local video/preview math MCP server."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+keywords = ["mcp", "windows-automation", "computer-use", "video-editing", "optical-flow", "motor-control"]
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "numpy>=1.26.0",
+    "opencv-python-headless>=4.9.0",
+    "av>=12.0.0",
+    "pywin32>=306; platform_system == 'Windows'",
+    "uiautomation>=2.0.18; platform_system == 'Windows'",
+]
+
+[project.optional-dependencies]
+capture = [
+    "windows-capture>=1.3.0; platform_system == 'Windows'",
+    "dxcam>=0.0.5; platform_system == 'Windows'",
+]
+audio = [
+    "librosa>=0.10.0",
+    "soundfile>=0.12.0",
+    "sounddevice>=0.4.6",
+]
+pose = [
+    "ultralytics>=8.2.0",
+]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+kinetic-mcp = "kinetic_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

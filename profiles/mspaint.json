@@ -1,0 +1,31 @@
+{
+  "app_id": "mspaint",
+  "window_title_contains": ["Paint"],
+  "process_names": ["mspaint.exe"],
+  "notes": "Normalized starter layout for Windows Paint for testing continuous smooth drawing primitives.",
+  "regions": {
+    "ribbon_tools": {
+      "name": "ribbon_tools",
+      "role": "toolbar",
+      "left_ratio": 0.02,
+      "top_ratio": 0.05,
+      "right_ratio": 0.98,
+      "bottom_ratio": 0.17,
+      "description": "Brushes, shapes, and color palette ribbon"
+    },
+    "canvas": {
+      "name": "canvas",
+      "role": "canvas",
+      "left_ratio": 0.05,
+      "top_ratio": 0.22,
+      "right_ratio": 0.92,
+      "bottom_ratio": 0.92,
+      "description": "Main drawing canvas area"
+    }
+  },
+  "shortcuts": {
+    "undo": ["ctrl", "z"],
+    "select_all": ["ctrl", "a"],
+    "clear_canvas": ["delete"]
+  }
+}
