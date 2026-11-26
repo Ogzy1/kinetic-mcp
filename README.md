@@ -26,8 +26,7 @@ It works with any MCP client — Antigravity, Claude Desktop, Cursor, or your ow
 
 ```powershell
 # Clone and set up
-git clone https://github.com/YOUR_USERNAME/kinetic-mcp.git
-cd kinetic-mcp
+git clone https://github.com/Ogzy1/kinetic-mcp.git
 
 # Create venv and install
 uv venv --system-site-packages .venv
